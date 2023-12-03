@@ -7,12 +7,12 @@ const Home = ({search,setSearch}) => {
 
   return (
     <div className='search-div'>
-        <div className="search-bar">
+        <form className="search-bar" onSubmit={()=>(navigator(`/word/${search}`))}>
             <input type="text" placeholder="Search any word.."
               onChange={(e)=>(setSearch(e.target.value))}
             />
-            <button onClick={()=>(navigator(`/word/${search}`))}>Search</button>
-          </div>
+            <button type='submit'>Search</button>
+          </form>
     </div>
   )
 }
