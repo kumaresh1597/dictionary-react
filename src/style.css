@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#navBar{
+    width: 100%;
+    height: 3rem;
+    background-color: grey;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left>p{
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.nav-right{
+    display: flex;
+    gap: 20px;
+    padding-inline: 10px;
+}
+
+.nav{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+.active{
+    color: black;
+}
+
+.card{
+    width: 100%;
+    padding: 10px;
+    box-shadow: 1px 1px 2px grey;
+}
+
+.search-div{
+    width: 100%;
+    padding-top: 50px;
+}
+.search-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar>input{
+    width: 50%;
+    height: 2rem;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.search-bar>button{
+    width: 5rem;
+    height: 2.8rem;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.loader{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinning-Loader{
+    width: 70px;
+    height: 70px;
+    border: 5px solid grey;
+    border-top: 5px solid white;
+    border-radius: 50%;
+    animation: loader 1s linear infinite;
+}
+
+@keyframes loader{
+    0%{
+        
+        transform: rotate(0deg); 
+    }
+    100%{
+    
+        transform: rotate(360deg); 
+    }
+}
+
+.word-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.list{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.history-div{
+    padding: 10px;
+}
